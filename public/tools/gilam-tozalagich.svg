@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Gilam tozalagich tasviri">
+  <g stroke="#1e2925" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M275 105h37v170h-37z" fill="#8c9a8f"/>
+    <path d="M249 69h88v37h-24V91h-40v15h-24z" fill="#28352f"/>
+    <path d="M237 176h111l37 58v128H200V234z" fill="#28352f"/>
+    <path d="M220 233h145v103H220z" fill="#aeb9ae"/>
+    <path d="M220 233h145v25H220z" fill="#dbe0d4"/>
+    <path d="M242 285h101" fill="none" stroke="#788a7e" stroke-width="6"/>
+    <circle cx="293" cy="318" r="14" fill="#bd623f" stroke="none"/>
+    <path d="M190 350h205l37 49H153z" fill="#4b5a4f"/>
+    <path d="M169 399h249" fill="none" stroke="#28352f" stroke-width="12"/>
+    <path d="M348 196c88 16 126 75 108 137-7 23-5 40 13 55" fill="none" stroke="#4b5a4f" stroke-width="16"/>
+    <path d="M458 381h31v29h-31z" fill="#bd623f"/>
+  </g>
+</svg>

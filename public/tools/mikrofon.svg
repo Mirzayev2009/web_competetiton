@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Mikrofon tasviri">
+  <g stroke="#1e2925" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M295 224h56v158h-56z" fill="#28352f"/>
+    <path d="M295 344h56v38h-56z" fill="#8c9a8f"/>
+    <path d="M290 205h66v36h-66z" fill="#bd623f"/>
+    <path d="M267 119c0-39 25-66 56-66s56 27 56 66v63c0 31-25 56-56 56s-56-25-56-56z" fill="#aeb9ae"/>
+    <path d="M271 119h104M268 145h110M271 171h104M281 197h84" fill="none" stroke="#5a695f" stroke-width="5"/>
+    <path d="M297 72v145M323 61v164M349 72v145" fill="none" stroke="#728177" stroke-width="4"/>
+    <path d="M313 382h20v19h-20z" fill="#bd623f"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tikuv mashinasi tasviri">
+  <g stroke="#1e2925" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M111 337h423v53H111z" fill="#28352f"/>
+    <path d="M157 162h270c35 0 58 24 58 58v117h-93v-87c0-13-8-22-22-22H255v109h-98z" fill="#dbe0d4"/>
+    <path d="M157 162h270c35 0 58 24 58 58H157z" fill="#eef0e7"/>
+    <path d="M177 112h35v50h-35z" fill="#8c9a8f"/>
+    <path d="M169 106h52" fill="none"/>
+    <path d="M195 226v110" fill="none" stroke="#28352f" stroke-width="10"/>
+    <path d="M195 297h61" fill="none" stroke="#28352f" stroke-width="8"/>
+    <path d="M219 298v45" fill="none" stroke="#28352f" stroke-width="5"/>
+    <circle cx="442" cy="258" r="25" fill="#bd623f"/>
+    <circle cx="442" cy="258" r="6" fill="#f0c5ae" stroke="none"/>
+    <path d="M284 192h87" fill="none" stroke="#bd623f" stroke-width="10"/>
+    <path d="M485 216h24v49h-24" fill="none" stroke-width="11"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Drel tasviri">
+  <g stroke="#1e2925" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M84 197h110v77H84z" fill="#aeb8ad"/>
+    <path d="M52 220h32v31H52z" fill="#1e2925"/>
+    <path d="M21 232h31" fill="none"/>
+    <path d="M194 177h240c29 0 54 22 54 51v16c0 30-25 54-54 54H194z" fill="#28352f"/>
+    <path d="M214 177h192v34H214z" fill="#aeb8ad" stroke="none"/>
+    <path d="M278 297h103l-13 98h-75z" fill="#28352f"/>
+    <path d="M292 389h91l15 24H279z" fill="#28352f"/>
+    <path d="M276 299h37l-8 25h-19z" fill="#bd623f"/>
+    <path d="M226 239h138" fill="none" stroke="#bd623f" stroke-width="13"/>
+    <circle cx="425" cy="258" r="12" fill="#bd623f" stroke="none"/>
+    <path d="M314 347h45M315 364h42" fill="none" stroke="#839187" stroke-width="5"/>
+    <path d="M112 209v53M134 209v53M156 209v53" fill="none" stroke="#66756a" stroke-width="5"/>
+  </g>
+</svg>

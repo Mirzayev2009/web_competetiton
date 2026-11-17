@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Narvon tasviri">
+  <g stroke="#1e2925" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="m306 90 32-9 151 316-28 12z" fill="#728178"/>
+    <path d="m305 90-31-9-151 316 28 12z" fill="#8c9a8f"/>
+    <path d="m337 90 31-9 151 316-28 12z" fill="#8c9a8f"/>
+    <path d="m336 90-31-9-151 316 28 12z" fill="#c7cfc3"/>
+    <path d="M284 72h74v40h-74z" fill="#bd623f"/>
+    <path d="M258 159h127v22H258zM235 218h173v22H235zM208 278h229v22H208zM180 339h286v22H180z" fill="#dbe0d4"/>
+    <path d="m122 389 30 12-10 22-31-12zM491 401l30-12 11 22-31 12z" fill="#bd623f"/>
+    <path d="M294 92h52" fill="none" stroke="#e7b294" stroke-width="5"/>
+  </g>
+</svg>

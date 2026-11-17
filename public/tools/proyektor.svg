@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Proyektor tasviri">
+  <g stroke="#1e2925" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M112 188h416v179H112z" fill="#d8ded2"/>
+    <path d="M112 188h416v44H112z" fill="#eef0e7"/>
+    <path d="M174 367h57v23h-57zM409 367h57v23h-57z" fill="#28352f"/>
+    <path d="M296 244h173v105H296z" fill="#28352f"/>
+    <circle cx="382" cy="296" r="63" fill="#839c9c"/>
+    <circle cx="382" cy="296" r="42" fill="#294f5a"/>
+    <circle cx="382" cy="296" r="20" fill="#c2d9d2" stroke="none"/>
+    <path d="M141 265h101M141 284h101M141 303h101" fill="none" stroke="#829087" stroke-width="6"/>
+    <circle cx="489" cy="307" r="10" fill="#bd623f" stroke="none"/>
+    <path d="M178 212h141" fill="none" stroke="#a9b5a8" stroke-width="6"/>
+  </g>
+</svg>
