@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 const loaderBoot = `if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.dataset.loaderPending = 'true'; } else { document.documentElement.dataset.loaderDone = 'true'; }`;
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="uz" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: loaderBoot }} /></head><body><SiteLoader /><a className="skip-link" href="#main-content">Asosiy mazmunga o‘tish</a><SiteHeader />{children}<SiteFooter /></body></html>;
+  return <html lang="uz" data-scroll-behavior="smooth" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: loaderBoot }} /></head><body><SiteLoader /><a className="skip-link" href="#main-content">Asosiy mazmunga o‘tish</a><SiteHeader />{children}<SiteFooter /></body></html>;
 }

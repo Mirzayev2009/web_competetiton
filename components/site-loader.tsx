@@ -32,15 +32,10 @@ export function SiteLoader() {
 
       delete document.documentElement.dataset.loaderDone;
       const previousOverflow = document.body.style.overflow;
-      const background = Array.from(document.body.children)
-        .filter((element): element is HTMLElement => element instanceof HTMLElement && element !== root)
-        .map((element) => ({ element, wasInert: element.inert }));
       const restoreBackground = () => {
-        for (const { element, wasInert } of background) element.inert = wasInert;
         document.body.style.overflow = previousOverflow;
         if (root.contains(document.activeElement)) document.querySelector<HTMLElement>(".brand")?.focus({ preventScroll: true });
       };
-      for (const { element } of background) element.inert = true;
       document.body.style.overflow = "hidden";
       gsap.set(root, { autoAlpha: 1, pointerEvents: "auto" });
       root.querySelector<HTMLButtonElement>(".site-loader__skip")?.focus({ preventScroll: true });
@@ -101,7 +96,7 @@ export function SiteLoader() {
   );
 
   return (
-    <div className="site-loader" ref={rootRef} role="dialog" aria-modal="true" aria-label="Sayt ochilmoqda">
+    <div className="site-loader" ref={rootRef} role="dialog" aria-modal="true" aria-label="Sayt ochilmoqda" onKeyDown={(event) => { if (event.key === "Tab") { event.preventDefault(); rootRef.current?.querySelector<HTMLButtonElement>(".site-loader__skip")?.focus(); } }}>
       <div className="site-loader__frame">
         <div className="site-loader__top" aria-hidden="true">
           <span>ASBOB / 01</span>

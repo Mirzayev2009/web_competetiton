@@ -25,7 +25,7 @@ export default async function RentalPage({ params }: { params: Promise<{ id: str
     <div className="shell"><Link href="/#asboblar" className="back-link"><ArrowLeftIcon /> Barcha asboblar</Link></div>
     <section className="shell rental-layout" aria-labelledby="rental-heading">
       <div className="rental-overview">
-        <div className="rental-art"><Image src={tool.image} alt="" width={700} height={520} priority /></div>
+        <div className="rental-art"><span className="rental-art-index" aria-hidden="true">{tool.id.slice(1)}</span><Image src={tool.image} alt="" width={700} height={520} priority /><span className="rental-art-tag">ASBOB / {tool.id}</span></div>
         <span className="tool-code">{tool.id} / Asbob-uskunalar</span>
         <h1 id="rental-heading">{tool.name}</h1>
         <p>{tool.description}</p>
