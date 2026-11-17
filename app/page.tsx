@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <div className="hero-visual" aria-hidden="true">
         <div className="hero-visual-top"><span>ASBOB / IJARA</span><span>01 — 06</span></div>
-        <div className="hero-artwork"><span className="hero-art-id">{TOOLS[0].id} / {TOOLS[0].name}</span><Image src={TOOLS[0].image} alt="" width={740} height={540} priority /><span className="hero-art-ticks" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></span></div>
+        <div className="hero-artwork"><span className="hero-art-id">{TOOLS[0].id} / {TOOLS[0].name}</span><span className="hero-art-ghost">01</span><Image className="hero-art-primary" src={TOOLS[0].image} alt="" width={740} height={540} priority /><div className="hero-art-inset"><Image src={TOOLS[1].image} alt="" width={180} height={180} /><span>{TOOLS[1].id}</span></div><span className="hero-art-ticks" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></span></div>
         <div className="hero-visual-bottom"><span>Har bir ish uchun o‘z asbobi.</span><span>{formatSom(TOOLS[0].dailyPrice)} / kun</span></div>
       </div>
     </section>

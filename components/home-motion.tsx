@@ -22,7 +22,8 @@ export function HomeMotion({ children }: { children: ReactNode }) {
         .from(".hero-actions > *", { y: 14, autoAlpha: 0, stagger: 0.08, duration: 0.45, clearProps: "transform,opacity,visibility" }, "-=0.34")
         .from(".hero-note", { autoAlpha: 0, duration: 0.45 }, "-=0.2")
         .from(".hero-visual", { x: 28, autoAlpha: 0, duration: 0.7 }, 0.16)
-        .from(".hero-artwork img", { x: 26, scale: 0.91, rotation: -3, autoAlpha: 0, duration: 0.84 }, 0.32)
+        .from(".hero-art-primary", { x: 26, scale: 0.91, rotation: -3, autoAlpha: 0, duration: 0.84 }, 0.32)
+        .from(".hero-art-inset", { x: 16, autoAlpha: 0, duration: 0.52 }, 0.66)
         .from(".hero-visual-top, .hero-visual-bottom", { y: 9, autoAlpha: 0, stagger: 0.12, duration: 0.42 }, 0.45);
       startIntro = () => {
         if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches && !intro.isActive() && intro.progress() === 0) intro.play();
@@ -64,7 +65,7 @@ export function HomeMotion({ children }: { children: ReactNode }) {
     if (document.documentElement.dataset.loaderDone === "true") onLoaderDone();
     else {
       window.addEventListener("asbob:loader-done", onLoaderDone, { once: true });
-      fallbackTimer = window.setTimeout(onLoaderDone, 1800);
+      fallbackTimer = window.setTimeout(onLoaderDone, 3200);
     }
 
     return () => {

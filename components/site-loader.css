@@ -133,6 +133,16 @@ html[data-loader-pending="true"] .site-loader {
   .site-loader__bottom-row { font-size: 10px; }
 }
 
+@media (max-height: 600px) {
+  .site-loader__frame { padding-block: 14px 16px; }
+  .site-loader__top { flex-direction: row; gap: 12px; font-size: 10px; }
+  .site-loader__center { margin-block: 10px; }
+  .site-loader__slats { height: 38px; margin-bottom: 10px; transform: scale(.58); transform-origin: left bottom; }
+  .site-loader__wordmark { font-size: clamp(52px, 11vh, 90px); }
+  .site-loader__subtitle { margin-top: 12px; font-size: 15px; }
+  .site-loader__progress { margin-bottom: 10px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .site-loader { display: none; }
 }

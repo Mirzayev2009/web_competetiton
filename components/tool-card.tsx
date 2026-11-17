@@ -5,7 +5,7 @@ import { formatSom, type CatalogTool } from "@/lib/tools";
 
 export function ToolCard({ tool }: { tool: CatalogTool }) {
   return <article className="tool-card">
-    <div className="tool-art"><Image src={tool.image} alt="" width={460} height={320} /></div>
+    <div className="tool-art"><span className="tool-art-code" aria-hidden="true">{tool.id.slice(1)}</span><Image src={tool.image} alt="" width={460} height={320} /></div>
     <div className="tool-card-body">
       <span className="tool-code">{tool.id}</span>
       <h3>{tool.name}</h3>
