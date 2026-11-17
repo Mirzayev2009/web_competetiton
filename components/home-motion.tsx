@@ -17,16 +17,20 @@ export function HomeMotion({ children }: { children: ReactNode }) {
     media.add("(prefers-reduced-motion: no-preference)", () => {
       let heroVisible = false;
       let introComplete = false;
-      const drill = gsap.timeline({ paused: true, repeat: -1, repeatDelay: 1.6 });
+      const drill = gsap.timeline({ paused: true, repeat: -1, repeatDelay: 0.85 });
       drill
-        .to(".drill-assembly", { x: -18, duration: 0.58, ease: "power2.inOut" })
-        .fromTo(".drill-flute", { scaleY: 1 }, { scaleY: 0.5, transformOrigin: "center center", duration: 0.065, repeat: 7, yoyo: true, ease: "none" }, 0.48)
-        .to(".drill-assembly", { x: -21, duration: 0.07, repeat: 3, yoyo: true, ease: "sine.inOut" }, 0.58)
-        .fromTo(".drill-dust", { x: 0, y: 0, autoAlpha: 0 }, { x: -10, y: -15, autoAlpha: 1, duration: 0.3, ease: "power2.out" }, 0.58)
-        .to(".drill-hole", { autoAlpha: 0.85, duration: 0.12 }, 0.64)
-        .to(".drill-dust", { autoAlpha: 0, duration: 0.28 }, 0.88)
-        .to(".drill-assembly", { x: 0, duration: 0.65, ease: "power2.inOut" }, 1.14)
-        .to(".drill-hole", { autoAlpha: 0, duration: 0.25 }, 1.35);
+        .to(".drill-assembly", { x: -18, duration: 0.55, ease: "power2.inOut" })
+        .fromTo(".drill-flute", { scaleY: 1 }, { scaleY: 0.35, transformOrigin: "center center", duration: 0.06, repeat: 16, yoyo: true, ease: "none" }, 0.35)
+        .fromTo(".drill-spin", { autoAlpha: 0, scaleY: 0.55 }, { autoAlpha: 0.85, scaleY: 1.08, transformOrigin: "center center", duration: 0.07, repeat: 13, yoyo: true, ease: "none" }, 0.4)
+        .to(".drill-assembly", { x: -22, duration: 0.075, repeat: 9, yoyo: true, ease: "sine.inOut" }, 0.6)
+        .to(".drill-hole", { autoAlpha: 0.9, duration: 0.12 }, 0.66)
+        .fromTo(".drill-impact", { scale: 0.6, autoAlpha: 0, transformOrigin: "right center" }, { scale: 1.2, autoAlpha: 0.85, duration: 0.3, ease: "power2.out" }, 0.65)
+        .fromTo(".drill-dust-a", { x: 0, y: 0, autoAlpha: 0 }, { x: -16, y: -14, autoAlpha: 1, duration: 0.3, ease: "power2.out" }, 0.68)
+        .fromTo(".drill-dust-b", { x: 0, y: 0, autoAlpha: 0 }, { x: -20, y: 13, autoAlpha: 1, duration: 0.36, ease: "power2.out" }, 0.98)
+        .to(".drill-impact, .drill-dust-a", { autoAlpha: 0, duration: 0.26 }, 1.05)
+        .to(".drill-dust-b, .drill-spin", { autoAlpha: 0, duration: 0.22 }, 1.35)
+        .to(".drill-assembly", { x: 0, duration: 0.55, ease: "power2.out" }, 1.47)
+        .to(".drill-hole", { autoAlpha: 0, duration: 0.3 }, 1.7);
       const syncDrill = () => {
         if (heroVisible && introComplete) drill.play();
         else drill.pause();
@@ -62,7 +66,8 @@ export function HomeMotion({ children }: { children: ReactNode }) {
         });
       };
 
-      reveal(".feature-strip", ".feature-strip-inner > div", 0.1);
+      reveal(".feature-strip", ".feature-heading", 0);
+      reveal(".feature-grid", ".feature-panel", 0.12);
       reveal(".catalog-section", ".catalog-section .section-heading > div, .catalog-count", 0.12);
       ScrollTrigger.batch(".tool-card", {
         start: "top 88%", once: true, interval: 0.12, batchMax: 3,

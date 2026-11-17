@@ -34,7 +34,7 @@ export function SiteHeader() {
     };
   }, [open]);
 
-  return <header className="site-header" ref={headerRef}>
+  return <header id="page-top" className="site-header" ref={headerRef}>
     <div className="shell header-inner">
       <Link className="brand" href="/" aria-label="Asbob ijara — bosh sahifa" onClick={() => setOpen(false)}><span className="brand-mark" aria-hidden="true"><span /><span /><span /></span><span>ASBOB<span className="brand-dot">.</span></span></Link>
       <button ref={buttonRef} className="menu-toggle" type="button" aria-expanded={open} aria-controls="main-navigation" aria-label={open ? "Menyuni yopish" : "Menyuni ochish"} onClick={() => setOpen((value) => !value)}>

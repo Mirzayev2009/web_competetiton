@@ -27,7 +27,14 @@ export default function Home() {
       </div>
     </section>
 
-    <div className="feature-strip"><div className="shell feature-strip-inner"><div><strong>06</strong><span>aniq narxli asbob</span></div><div><strong>1–7</strong><span>kunlik muddat</span></div><div><strong>×</strong><span>narx × muddat = jami</span></div></div></div>
+    <section className="feature-strip" aria-labelledby="feature-heading"><div className="shell">
+      <div className="feature-heading"><span className="eyebrow">BIR QARASHDA</span><h2 id="feature-heading">Bir qarashda hammasi aniq.</h2></div>
+      <div className="feature-grid">
+        <div className="feature-panel"><div className="feature-panel-top"><span>01 / TANLOV</span><span>↗</span></div><strong>6 ta asbob</strong><p>Uy ishlari, taqdimot va kichik tadbir uchun. Har birining vazifasi va kunlik narxi ko‘rsatilgan.</p><div className="feature-bars" aria-hidden="true">{TOOLS.map((tool) => <i key={tool.id} />)}</div></div>
+        <div className="feature-panel"><div className="feature-panel-top"><span>02 / MUDDAT</span><span>↗</span></div><strong>1–7 kun</strong><p>Kerakli muddatni belgilang. Kunlar soni o‘zgarsa, jami summa ham shu zahoti yangilanadi.</p><div className="feature-days" aria-hidden="true">{[1, 2, 3, 4, 5, 6, 7].map((day) => <span key={day}>{day}</span>)}</div></div>
+        <div className="feature-panel feature-panel-calc"><div className="feature-panel-top"><span>03 / HISOB</span><span>UZS</span></div><strong>{formatSom(exampleTool.dailyPrice * 3)}</strong><p>Masalan, {exampleTool.name}ni 3 kunga tanlasangiz, hisob mana shunday chiqadi.</p><div className="feature-equation"><span>{formatSom(exampleTool.dailyPrice)} × 3</span><span>=</span><b>{formatSom(exampleTool.dailyPrice * 3)}</b></div></div>
+      </div>
+    </div></section>
 
     <section id="asboblar" className="catalog-section" aria-labelledby="catalog-heading">
       <div className="shell">
